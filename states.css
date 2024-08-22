@@ -1,0 +1,201 @@
+* {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+
+body {
+  background-color: #FF4B7F;
+}
+
+.card {
+  margin: 10px 10px;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+/* Flip Cards CSS */
+.card-container {
+  perspective: 700px;
+  margin-right: 80px;
+}
+
+.card-flip {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  grid-template-areas: "frontAndBack";
+  transform-style: preserve-3d;
+  transition: all 0.7s ease;
+ padding-left: 27px;
+
+}
+
+.card-flip div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.front {
+  grid-area: frontAndBack;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  width: 35rem;
+}
+
+.back {
+  grid-area: frontAndBack;
+  transform: rotateY(-180deg);
+  padding: 10px;
+  background-color: #000;
+  color: #FFF;
+  width: 35rem;
+  margin-left: -130px;
+  position: relative;
+  right:1.4rem;
+}
+
+input[type='checkbox']:checked+.card-container .card-flip {
+  transform: rotateY(180deg);
+}
+
+#container {
+  padding-bottom: 16px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/*.btn-state {
+  margin-left: 30px;
+  /*margin-top: 138px;
+}*/
+
+.head h1 {
+  display: inline;
+  background-color: #f3260b;
+  padding: 0px 100px;
+  border-radius: 5px;
+  color: white;
+}
+
+
+.head {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.card-header {
+  background-color: #f2c7dc;
+  color: #000;
+}
+
+.card-price{
+  color: #f3260b;
+}
+
+.card-text{
+  margin-bottom: -1rem;
+  
+}
+
+/*navbar*/
+.nav-link:hover{
+  color: #000;
+  }
+  
+  .dropdown-item:hover{
+  color: #000;
+  }
+  
+  .btn{
+      background-color: #000;
+      border-color: #000;
+  }
+  
+  .btn:hover{
+      background-color: #000;
+      border-color: #000;
+  }
+  .modal .btn-close{
+      right: 1.7rem;
+  }
+
+  .form-floating>label{
+top: -20px;
+  }
+
+  .btn-state{
+    top: 5rem;
+    border: 2px solid #ff84be;
+    border-radius: 1rem;
+    height: 2.5rem;
+    width: 5rem;
+    background-color: #ff84be;
+    color: #000;
+  }
+
+  .btn-state:hover{
+    background-color: rgb(51, 51, 51);
+    border-color: rgb(51, 51, 51);
+  }
+
+  .card-body{
+    position: relative;
+    bottom: 1rem;
+  }
+/*navbar*/
+
+/*new changes in body container for positioning*/
+
+#container{
+  margin-left: 2rem;
+}
+
+/*new changes in body container for positioning*/
+
+
+
+/*sound and light button*/
+
+.btn-sound{
+  top: -2rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+  height: 2rem;
+  width: 5rem;
+  background-color: #000;
+}
+
+.btn-sound:hover{
+  background-color: rgb(51, 51, 51);
+  border-color: rgb(51, 51, 51);
+}
+
+/*sound and light button*/
+
+
+
+/*photography button*/
+.btn-photo{
+  top: -2rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+  height: 2rem;
+  width: 5rem;
+  background-color: #000;
+}
+
+.btn-photo:hover{
+  background-color: rgb(51, 51, 51);
+  border-color: rgb(51, 51, 51);
+}
+/*photography button*/
+
+.card-body{
+  top: 4px;
+  width: 590px;
+  right: 5px;
+  background-color: #f2c7dc;
+}
